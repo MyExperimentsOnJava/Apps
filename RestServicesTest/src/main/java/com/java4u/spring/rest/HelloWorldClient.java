@@ -10,6 +10,9 @@ import com.sun.jersey.api.client.config.DefaultClientConfig;
 import com.sun.jersey.api.json.JSONConfiguration;
 
 public class HelloWorldClient {
+	HelloWorldClient(){
+		
+	}
 	public static void main(String args[]) {
 		ClientConfig config = new DefaultClientConfig();
 		config.getFeatures().put(JSONConfiguration.FEATURE_POJO_MAPPING, true);
